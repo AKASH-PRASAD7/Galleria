@@ -1,174 +1,182 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(48, 2, 48);
+  background-color: rgb(48, 2, 48);
 }
 
 .navbr {
-    background-color: rgb(34, 5, 34);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    height: 3.5rem;
-    position: sticky;
-    top: 0;
+  background-color: rgb(34, 5, 34);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 3.5rem;
+  position: sticky;
+  top: 0;
 }
 
 .head {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular',
-        'Lucida Grande', 'Lucida Sans Unicode',
-        Geneva, Verdana, sans-serif;
-    font-style: italic;
-    position: relative;
-    top: 12px;
-    left: 17px;
-    font-size: x-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  position: relative;
+  top: 12px;
+  left: 17px;
+  font-size: x-large;
 }
 
 .add {
-    position: relative;
-    top: 7px;
-    right: 19px;
-    width: 6.4rem;
-    height: 2.5rem;
-    background-color: green;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: large;
-    font-weight: 700;
+  position: relative;
+  top: 7px;
+  right: 19px;
+  width: 6.4rem;
+  height: 2.5rem;
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: large;
+  font-weight: 700;
 }
 
 .add:hover {
-    background-color: rgb(3, 68, 3);
-    cursor: pointer;
+  background-color: rgb(3, 68, 3);
+  cursor: pointer;
 }
 
 .search {
-    background-color: white;
-    width: 70vw;
-    margin: auto;
-    margin-top: 3rem;
-    height: 3rem;
-    border-radius: 10px;
-    display: flex;
-
+  background-color: white;
+  width: 70vw;
+  margin: auto;
+  margin-top: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+  display: flex;
 }
 
 #search_inp {
-    width: 90%;
-    height: 100%;
-    margin-left: 1rem;
-    border: none;
-    outline: none;
+  width: 90%;
+  height: 100%;
+  margin-left: 1rem;
+  border: none;
+  outline: none;
 }
 
 .searchicon {
-    background-color: gainsboro;
-    font-size: xx-large;
-    width: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+  background-color: gainsboro;
+  font-size: xx-large;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .searchicon:hover {
-    background-color: rgb(145, 142, 142);
-    cursor: pointer;
+  background-color: rgb(145, 142, 142);
+  cursor: pointer;
 }
 
 .searchicon span {
-    font-size: xx-large;
+  font-size: xx-large;
 }
 
 .popup {
-    background-color: rgba(198, 200, 244, 0.829);
-    width: 40vw;
-    height: 65vh;
-    margin: auto;
-    border-radius: 10px;
-    display: none;
-
+  background-color: rgba(198, 200, 244, 0.829);
+  width: 40vw;
+  height: 65vh;
+  margin: auto;
+  border-radius: 10px;
+  display: none;
 }
 
 .head1 {
-    color: white;
+  color: white;
 }
 
 .add1:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .popup .title {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(0, 81, 255);
-    height: 10%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 81, 255);
+  height: 10%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .head1 {
-    position: relative;
-    top: 7px;
-    left: 10px;
-    font-family: poppins;
-
+  position: relative;
+  top: 7px;
+  left: 10px;
+  font-family: poppins;
 }
 
 .add1 {
-    position: relative;
-    top: 7px;
-    right: 10px;
-    font-size: x-large;
+  position: relative;
+  top: 7px;
+  right: 10px;
+  font-size: x-large;
 }
 
 .content {
-    margin: auto;
-    width: 90%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .url {
-    width: 90%;
-    height: 10%;
-    border: none;
-    outline: none;
-    border-radius: 7px;
-    border: 2px solid gray;
+  width: 90%;
+  height: 10%;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  border: 2px solid gray;
 }
 
 .first,
 .end {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .end {
-    display: flex;
-    gap: 90px;
+  display: flex;
+  gap: 90px;
 }
 
 .close {
-    background-color: red;
+  background-color: red;
 }
 
 .close:hover {
-    background-color: rgb(151, 3, 3);
+  background-color: rgb(151, 3, 3);
 }
 
 .task_conatainer {
-    width: 85%;
-    margin: auto;
-    margin-top: 3rem;
-    background-color: cyan;
+  width: 85%;
+  margin: auto;
+  margin-top: 3rem;
+}
+.tasks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.task_item {
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  width: 15rem;
+  height: 20rem;
+  border-radius: 10px;
 }
