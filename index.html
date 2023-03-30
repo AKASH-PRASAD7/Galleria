@@ -19,17 +19,27 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
-  <body>
+  <body onload="loadTasks()">
     <nav class="navbr">
       <h3 class="head">Galleria</h3>
-      <button id="btn_crt" class="add crt">
-        <i class="fa-solid fa-plus"></i> Create
-      </button>
+      <div>
+        <button id="clearall" onclick="deleteall()" class="add close">
+          Delete All
+        </button>
+        <button id="btn_crt" class="add crt">
+          <i class="fa-solid fa-plus"></i> Create
+        </button>
+      </div>
     </nav>
     <div class="search">
-      <input id="search_inp" type="text" placeholder="Enter to Search ..." />
+      <input
+        oninput="search(this)"
+        id="search_inp"
+        type="text"
+        placeholder=" Search Gallery ..."
+      />
       <div class="searchicon">
-        <span class="material-symbols-outlined">search</span>
+        <span id="searchicon" class="material-symbols-outlined">search</span>
       </div>
     </div>
 
@@ -58,7 +68,7 @@
         ></textarea>
 
         <div class="end">
-          <button class="add close">Close</button>
+          <button onclick="closePopup()" class="add close">Close</button>
           <button type="submit" id="task_create" class="add create">
             Create
           </button>
